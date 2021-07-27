@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Calculator</title>
+    <link rel="stylesheet" href="./Assets/Style/component.css" />
+    <link rel="stylesheet" href="./Assets/Style/Style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd35a950d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Assets/Script/app.js" defer></script>
+  </head>
+  <body >
+    <header class="card-glass-dark">
+      <nav class="navbar flex-box fluid-cointainer">
+        <h1 class="nav-brand">STOCK CALCULATOR</h1>
+        <div>
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/RahulKuvlekar" target="_blank"
+                ><i class="fab fa-github-square fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/RahulKuvlekar" target="_blank"
+                ><i class="fab fa-twitter-square fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rahulkuvlekar"
+                target="_blank"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/rahul_kuvlekar_/"
+                target="_blank"
+                ><i class="fab fa-instagram-square fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-box">
+      <section id="main-1" class="flex-box">
+        <div class="main-info fluid-container card-glass">
+          <h1 class=""><span> World Trading Data</span></h1>
+          <h4>The best worldwide market data provider.</h4>
+        </div>
+      </section>
+      <section id="main-2" class="flex-box">
+        <div class="fluid-container card-glass">
+          <h2>Check Profit/Loss on your Stock</h2>
+          <div id="input-section">
+            <h3>Purchase Price</h3>
+            <input
+              type="number"
+              name=""
+              id="purchase-price"
+              placeholder="Cost of Stock"
+            />
+            <h3>Stock Quantity</h3>
+            <input
+              type="number"
+              name=""
+              id="stock-quantity"
+              placeholder="Quantity of Stock"
+            />
+            <h3>Current Price</h3>
+            <input
+              type="number"
+              name=""
+              id="current-price"
+              placeholder="Current Price of Stock"
+            />
+            <button id="checkBtn" class="btn-black">Check</button>
+          </div>
+          <span id="errorMsg" class="notVisible card"
+            >Please Check the Inputs</span
+          >
+          <div id="output-section" class="notVisible card">
+            <h2>MSG</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
